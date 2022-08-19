@@ -1,17 +1,53 @@
 {
   "vtex.menu@2.x:menu#category-menu": {
     "props": {
-      "experimentalOptimizeRendering": true
-    },
-    "children": [
-      "menu-item#feminino",
-      "menu-item#masculino",
-      "menu-item#more"
-    ]
+      "experimentalOptimizeRendering": true,
+      "items": [
+        {
+          "id": "menu-item-feminino",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/roupas/femininas",
+            "noFollow": true,
+            "tagTitle": "Feminino",
+            "text": "Feminino"
+          }
+        },
+        {
+          "id": "menu-item-masculino",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/roupas/masculinas",
+            "noFollow": true,
+            "tagTitle": "Masculino",
+            "text": "Masculino"
+          }
+        },
+        {
+          "id": "menu-item-mais",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": true,
+            "tagTitle": "More",
+            "text": "Mais"
+          }
+        }
+      ]
+    }
   },
   "menu-item#feminino": {
     "props": {
-      "id": "menu-item-custom-sale",
+      "id": "menu-item-feminino",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -53,13 +89,49 @@
   },
   "vtex.menu@2.x:menu#feminino": {
     "props": {
-      "orientation": "vertical"
-    },
-    "children": [
-      "menu-item#category-calcas",
-      "menu-item#category-camisas",
-      "menu-item#category-moletons"
-    ]
+      "orientation": "vertical",
+      "items": [
+        {
+          "id": "menu-item-category-calcasf",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/roupas/femininas/calcas-femininas",
+            "noFollow": false,
+            "tagTitle": "Calças",
+            "text": "Calças"
+          }
+        },
+        {
+          "id": "menu-item-category-camisasf",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/roupas/femininas/camisas-femininas",
+            "noFollow": false,
+            "tagTitle": "Camisas",
+            "text": "Camisas"
+          }
+        },
+        {
+          "id": "menu-item-category-moletonsf",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/roupas/femininas/moletons-femininos",
+            "noFollow": false,
+            "tagTitle": "Moletons",
+            "text": "Moletons"
+          }
+        }
+      ]
+    }
   },
   "vtex.menu@2.x:submenu#masculino": {
     "props": {
@@ -87,224 +159,296 @@
   },
   "vtex.menu@2.x:menu#masculino": {
     "props": {
-      "orientation": "vertical"
-    },
-    "children": [
-      "menu-item#category-camisasm",
-      "menu-item#category-moletonsm",
-      "menu-item#category-shortsm"
-    ]
-  },
-  "menu-item#category-moletons": {
-    "props": {
-      "id": "menu-item-category-moletons",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/roupas/femininas/moletons-femininos",
-        "noFollow": false,
-        "tagTitle": "Moletons",
-        "text": "Moletons"
-      }
+      "orientation": "vertical",
+      "items": [
+        {
+          "id": "menu-item-category-camisasm",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/roupas/masculinas/camisas-masculinas",
+            "noFollow": false,
+            "tagTitle": "Camisas",
+            "text": "Camisas"
+          }
+        },
+        {
+          "id": "menu-item-category-moletonsm",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/roupas/masculinas/moletons-masculinos",
+            "noFollow": false,
+            "tagTitle": "Moletons",
+            "text": "Moletons"
+          }
+        },
+        {
+          "id": "menu-item-category-shortsm",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/roupas/masculinas/shorts",
+            "noFollow": false,
+            "tagTitle": "Shorts",
+            "text": "Shorts"
+          }
+        }
+      ]
     }
   },
-  "menu-item#category-moletonsm": {
-    "props": {
-      "id": "menu-item-category-moletons",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/roupas/masculinas/moletons-masculinos",
-        "noFollow": false,
-        "tagTitle": "Moletons",
-        "text": "Moletons"
-      }
-    }
-  },
-  "menu-item#category-camisas": {
-    "props": {
-      "id": "menu-item-category-camisas",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/roupas/femininas/camisas-femininas",
-        "noFollow": false,
-        "tagTitle": "Camisas",
-        "text": "Camisas"
-      }
-    }
-  },
-  "menu-item#category-calcas": {
-    "props": {
-      "id": "menu-item-category-calcas",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/roupas/femininas/calcas-femininas",
-        "noFollow": false,
-        "tagTitle": "Calças",
-        "text": "Calças"
-      }
-    }
-  },
-  "menu-item#category-camisasm": {
-    "props": {
-      "id": "menu-item-category-camisas",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/roupas/masculinas/camisas-masculinas",
-        "noFollow": false,
-        "tagTitle": "Camisas",
-        "text": "Camisas"
-      }
-    }
-  },
-  "menu-item#category-shortsm": {
-    "props": {
-      "id": "menu-item-category-camisas",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/roupas/masculinas/shorts",
-        "noFollow": false,
-        "tagTitle": "Shorts",
-        "text": "Shorts"
-      }
-    }
-  },
-  "menu-item#masculino": {
-    "props": {
-      "id": "menu-item-custom-sale",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/roupas/masculinas",
-        "noFollow": true,
-        "tagTitle": "Masculino",
-        "text": "Masculino"
-      }
-    },
-    "blocks": [
-      "vtex.menu@2.x:submenu#masculino"
-    ]
-  },
-  "menu-item#more": {
-    "props": {
-      "id": "menu-item-custom-sale",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "#",
-        "noFollow": true,
-        "tagTitle": "More",
-        "text": "Mais"
-      }
-    },
-    "blocks": [
-      "vtex.menu@2.x:submenu#more"
-    ]
-  },
-  "vtex.menu@2.x:submenu#more": {
-    "props": {
-      "width": "100%"
-    },
-    "children": [
-      "flex-layout.row#menu-more"
-    ]
-  },
-  "flex-layout.row#menu-more": {
-    "children": [
-      "flex-layout.col#menu-more-1",
-      "flex-layout.col#menu-more-2"
-    ]
-  },
-  "flex-layout.col#menu-more-1": {
-    "children": [
-      "vtex.menu@2.x:menu#more"
-    ]
-  },
-  "flex-layout.col#menu-more-2": {
-    "children": [
-      "info-card#home"
-    ]
-  },
-  "vtex.menu@2.x:menu#more": {
-    "props": {
-      "orientation": "vertical"
-    },
-    "children": [
-      "menu-item#meias",
-      "menu-item#variedades",
-      "menu-item#about-us"
-    ]
-  },
-  "menu-item#about-us": {
-    "props": {
-      "id": "menu-item-about-us",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/about-us",
-        "noFollow": true,
-        "tagTitle": "Sobre",
-        "text": "Sobre"
-      }
-    }
-  },
-  "menu-item#contact-us": {
-    "props": {
-      "id": "menu-item-contact-us",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/contact-us",
-        "noFollow": true,
-        "tagTitle": "Contact Us",
-        "text": "Contact Us"
-      }
-    }
-  },
-  "info-card#masculino": {
-    "props": {
-      "id": "info-card-home",
-      "isFullModeStyle": false,
-      "textPosition": "center",
-      "imageUrl": "https://imgkub.com/images/2022/08/02/banner-moda-masculina-bitsized1.png",
-      "blockClass": "info-card-home",
-      "textAlignment": "center",
-      "callToActionMode": "none"
-    }
-  },
-  "info-card#feminino": {
-    "props": {
-      "id": "info-card-home",
-      "isFullModeStyle": false,
-      "textPosition": "left",
-      "imageUrl": "https://imgkub.com/images/2022/08/02/banner-moda-feminina-bitsized1.png",
-      "blockClass": "info-card-home",
-      "textAlignment": "center",
-      "callToActionMode": "none"
+"menu-item#category-moletons": {
+  "props": {
+    "id": "menu-item-category-moletonsf",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "/roupas/femininas/moletons-femininos",
+      "noFollow": false,
+      "tagTitle": "Moletons",
+      "text": "Moletons"
     }
   }
+},
+"menu-item#category-moletonsm": {
+  "props": {
+    "id": "menu-item-category-moletonsm",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "/roupas/masculinas/moletons-masculinos",
+      "noFollow": false,
+      "tagTitle": "Moletons",
+      "text": "Moletons"
+    }
+  }
+},
+"menu-item#category-camisas": {
+  "props": {
+    "id": "menu-item-category-camisasf",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "/roupas/femininas/camisas-femininas",
+      "noFollow": false,
+      "tagTitle": "Camisas",
+      "text": "Camisas"
+    }
+  }
+},
+"menu-item#category-calcas": {
+  "props": {
+    "id": "menu-item-category-calcasf",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "/roupas/femininas/calcas-femininas",
+      "noFollow": false,
+      "tagTitle": "Calças",
+      "text": "Calças"
+    }
+  }
+},
+"menu-item#category-camisasm": {
+  "props": {
+    "id": "menu-item-category-camisasm",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "/roupas/masculinas/camisas-masculinas",
+      "noFollow": false,
+      "tagTitle": "Camisas",
+      "text": "Camisas"
+    }
+  }
+},
+"menu-item#category-shortsm": {
+  "props": {
+    "id": "menu-item-category-shortsm",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "/roupas/masculinas/shorts",
+      "noFollow": false,
+      "tagTitle": "Shorts",
+      "text": "Shorts"
+    }
+  }
+},
+"menu-item#masculino": {
+  "props": {
+    "id": "menu-item-masculino",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "/roupas/masculinas",
+      "noFollow": true,
+      "tagTitle": "Masculino",
+      "text": "Masculino"
+    }
+  },
+  "blocks": [
+    "vtex.menu@2.x:submenu#masculino"
+  ]
+},
+"menu-item#more": {
+  "props": {
+    "id": "menu-item-mais",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "#",
+      "noFollow": true,
+      "tagTitle": "More",
+      "text": "Mais"
+    }
+  },
+  "blocks": [
+    "vtex.menu@2.x:submenu#more"
+  ]
+},
+"vtex.menu@2.x:submenu#more": {
+  "props": {
+    "width": "100%"
+  },
+  "children": [
+    "flex-layout.row#menu-more"
+  ]
+},
+"flex-layout.row#menu-more": {
+  "children": [
+    "flex-layout.col#menu-more-1",
+    "flex-layout.col#menu-more-2"
+  ]
+},
+"flex-layout.col#menu-more-1": {
+  "children": [
+    "vtex.menu@2.x:menu#more"
+  ]
+},
+"flex-layout.col#menu-more-2": {
+  "children": [
+    "info-card#home"
+  ]
+},
+"vtex.menu@2.x:menu#more": {
+  "props": {
+    "orientation": "vertical",
+    "items": [
+      {
+        "id": "menu-item-meias",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/roupas/meias",
+          "noFollow": true,
+          "tagTitle": "Meias",
+          "text": "Meias"
+        }
+      },
+      {
+        "id": "menu-item-variedades",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/variedades",
+          "noFollow": true,
+          "tagTitle": "Variedades",
+          "text": "Variedades"
+        }
+      },
+      {
+        "id": "menu-item-about-us",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/about-us",
+          "noFollow": true,
+          "tagTitle": "Sobre",
+          "text": "Sobre"
+        }
+      }
+    ]
+  }
+},
+"menu-item#about-us": {
+  "props": {
+    "id": "menu-item-about-us",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "/about-us",
+      "noFollow": true,
+      "tagTitle": "Sobre",
+      "text": "Sobre"
+    }
+  }
+},
+"menu-item#contact-us": {
+  "props": {
+    "id": "menu-item-contact-us",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "/contact-us",
+      "noFollow": true,
+      "tagTitle": "Contact Us",
+      "text": "Contact Us"
+    }
+  }
+},
+"info-card#masculino": {
+  "props": {
+    "id": "info-card-home",
+    "isFullModeStyle": false,
+    "textPosition": "center",
+    "imageUrl": "https://imgkub.com/images/2022/08/02/banner-moda-masculina-bitsized1.png",
+    "blockClass": "info-card-home",
+    "textAlignment": "center",
+    "callToActionMode": "none"
+  }
+},
+"info-card#feminino": {
+  "props": {
+    "id": "info-card-home",
+    "isFullModeStyle": false,
+    "textPosition": "left",
+    "imageUrl": "https://imgkub.com/images/2022/08/02/banner-moda-feminina-bitsized1.png",
+    "blockClass": "info-card-home",
+    "textAlignment": "center",
+    "callToActionMode": "none"
+  }
+}
 }
